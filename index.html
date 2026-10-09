@@ -20,11 +20,13 @@
             box-sizing: border-box;
             font-family: "Poppins", sans-serif;
         }
-        nav{
+
+        nav {
             position: sticky;
-            top:0;
+            top: 0;
             box-shadow: 0px 0px 50px lightgray;
         }
+
         .black-header {
             background-color: black;
             color: white;
@@ -151,7 +153,7 @@
             flex-direction: column;
             justify-content: center;
             gap: 1rem;
-            
+
         }
 
         /* .icon-bg {
@@ -175,14 +177,76 @@
             color: #777777;
             transition: .2s;
         }
-        .card span:hover{
+
+        .card span:hover {
             background-color: #FAB700;
-            cursor:pointer;
+            cursor: pointer;
             color: white;
-            border:1px solid #777777;
+            border: 1px solid #777777;
         }
-        .card h2{
+
+        .card h2 {
             padding-top: 2.2rem;
+        }
+/* Footer */
+        footer {
+            height: 60vh;
+            background-color: #04091e;
+            color: white;
+        }
+        .footer-container{
+             display: flex;
+             flex-direction: row;
+             height: 100%;
+             justify-content: center;
+             align-items: center;
+            gap: 3rem;
+        }
+       
+        footer div{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        footer p {
+            color: #777777;
+            font-size: 14px;
+        }
+       footer .inputbox{
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+       }
+        
+       .heading{
+        font-size: 20px;
+        color: white;
+        font-weight: 600;
+       }
+        .news input, .news i{
+            padding: 12px;
+        }
+       .about{
+       width: 28rem;
+       }
+       
+        footer input{
+               border:none;
+               outline: none;
+               width: 22rem;
+            
+        }
+        footer .inputbox i{
+            background-color: #FAB700;
+            width: 50px;
+        }
+        footer .icons-footer{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        footer span{
+            color: #FAB700;
         }
     </style>
 </head>
@@ -257,6 +321,38 @@
                 </div>
             </div>
         </section>
+        <footer>
+
+            <div class="footer-container">
+
+                
+                  <div class="about">
+                      <p class="heading" >About Us</p >
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                          dolore magna aliqua.</p>
+                      <p>Copyright ©2026 All rights reserved | This template is made with <span class="lnr lnr-heart"></span> by <span>Colorlib</span></p>
+                  </div>
+                  <div class="news">
+                      <p class="heading" >Newsletter</p >
+                      <p>Stay updated with out latest</p>
+                      <div class="inputbox">
+      
+                          <input type="text" placeholder="Enter Email">
+                          <i class="fa-solid fa-right-long"></i>
+                      </div>
+                  </div>
+                  <div class="follow">
+                      <p class="heading" >Follow Us</p >
+                      <p>Let us be social</p>
+                      <div class="icons-footer">
+                          <i class="fa-brands fa-facebook-f"></i>
+                          <i class="fa-brands fa-twitter"></i>
+                          <i class="fa-brands fa-dribbble"></i>
+                          <i class="fa-brands fa-behance"></i>  
+                      </div>
+                  </div>
+            </div>
+        </footer>
     </div>
 </body>
 

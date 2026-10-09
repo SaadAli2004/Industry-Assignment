@@ -188,74 +188,134 @@
         .card h2 {
             padding-top: 2.2rem;
         }
-/* Footer */
+
+        /* Data */
+
+        .data {
+            width: 100%;
+            height: 60vh;
+            background-image: url(img/fact.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .overlay{
+            background-color: rgba(0, 0, 0, 0.6);
+            height: 100%;
+            color: white;
+        }
+        .circle, .inner-circle{
+            border-radius: 100%;
+        }
+        .circle{
+            border: 1px solid #FAB700;
+            width: 150px;
+            
+        }
+        .inner-circle h2{
+            background-color: #FAB700;
+            border-radius: 100%;
+            text-align: center;
+            padding: 25px;
+            margin: 25px;
+            
+        }
+        .data-list div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            
+        }
+        .data-list div p{
+            font-size: 1.2rem;
+        }
+        .data-list{
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 6.5rem;
+        }
+        /* Footer */
         footer {
             height: 60vh;
             background-color: #04091e;
             color: white;
         }
-        .footer-container{
-             display: flex;
-             flex-direction: row;
-             height: 100%;
-             justify-content: center;
-             align-items: center;
+
+        .footer-container {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
             gap: 3rem;
         }
-       
-        footer div{
+
+        footer div {
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
         }
+
         footer p {
             color: #777777;
             font-size: 14px;
-            font-weight:300;
+            font-weight: 300;
         }
-       footer .inputbox{
-        display: flex;
-        flex-direction: row;
-        gap: 0;
-       }
-        
-       .heading{
-        font-size: 20px;
-        color: white;
-        font-weight: 600;
-       }
-        .news input, .news i{
+
+        footer .inputbox {
+            display: flex;
+            flex-direction: row;
+            gap: 0;
+        }
+
+        .heading {
+            font-size: 20px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .news input,
+        .news i {
             padding: 12px;
         }
-       .about{
-       width: 28rem;
-       }
-       .follow i{
-        font-size: .8rem;
-        color: #777777;
-        transition: .3s;
-       }
-       .follow i:hover{
-        cursor: pointer;
-        color: #FAB700;
-       }
-        footer input{
-               border:none;
-               outline: none;
-               width: 22rem;
-            
+
+        .about {
+            width: 28rem;
         }
-        footer .inputbox i{
+
+        .follow i {
+            font-size: .9rem;
+            color: #cccccc;
+            transition: .3s;
+        }
+
+        .follow i:hover {
+            cursor: pointer;
+            color: #FAB700;
+        }
+
+        footer input {
+            border: none;
+            outline: none;
+            width: 22rem;
+
+        }
+
+        footer .inputbox i {
             background-color: #FAB700;
             width: 50px;
         }
-        
-        footer .icons-footer{
+
+        footer .icons-footer {
             display: flex;
             flex-direction: row;
-            
+
         }
-        footer span, a{
+
+        footer span,
+        a {
             color: #FAB700;
         }
     </style>
@@ -331,36 +391,79 @@
                 </div>
             </div>
         </section>
+        <section class="data">
+            <div class="overlay">
+                <div class="data-list">
+
+                   <div>
+                       <div class="circle">
+                           <div class="inner-circle">
+                               <h2>2K+</h2>
+                           </div>
+                       </div>
+                       <p>Projects Completed</p>
+                   </div>
+                   <div>
+                       <div class="circle">
+                           <div class="inner-circle">
+                               <h2>5.5K</h2>
+                           </div>
+                       </div>
+                       <p>Total Employees</p>
+                   </div>
+                   <div>
+                       <div class="circle">
+                           <div class="inner-circle">
+                               <h2>959</h2>
+                           </div>
+                       </div>
+                       <p>Happy Clients</p>
+                   </div>
+                   <div>
+                       <div class="circle">
+                           <div class="inner-circle">
+                               <h2>367</h2>
+                           </div>
+                       </div>
+                       <p>Tickets Submitted</p>
+                   </div>
+
+                </div>
+            </div>
+
+        </section>
         <footer>
 
             <div class="footer-container">
 
-                
-                  <div class="about">
-                      <p class="heading" >About Us</p >
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                          dolore magna aliqua.</p>
-                      <p>Copyright ©2026 All rights reserved | This template is made with <span class="lnr lnr-heart"></span> by <a href="">Colorlib</a></p>
-                  </div>
-                  <div class="news">
-                      <p class="heading" >Newsletter</p >
-                      <p>Stay updated with out latest</p>
-                      <div class="inputbox">
-      
-                          <input type="text" placeholder="Enter Email">
-                          <i class="fa-solid fa-right-long"></i>
-                      </div>
-                  </div>
-                  <div class="follow">
-                      <p class="heading" >Follow Us</p >
-                      <p>Let us be social</p>
-                      <div class="icons-footer">
-                          <i class="fa-brands fa-facebook-f"></i>
-                          <i class="fa-brands fa-twitter"></i>
-                          <i class="fa-brands fa-dribbble"></i>
-                          <i class="fa-brands fa-behance"></i>  
-                      </div>
-                  </div>
+
+                <div class="about">
+                    <p class="heading">About Us</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        dolore magna aliqua.</p>
+                    <p>Copyright ©2026 All rights reserved | This template is made with <span
+                            class="lnr lnr-heart"></span> by <a href="">Colorlib</a></p>
+                </div>
+                <div class="news">
+                    <p class="heading">Newsletter</p>
+                    <p>Stay updated with out latest</p>
+                    <div class="inputbox">
+
+                        <input type="text" placeholder="Enter Email">
+                        <i class="fa-solid fa-right-long"></i>
+                    </div>
+                </div>
+                <div class="follow">
+                    <p class="heading">Follow Us</p>
+                    <p>Let us be social</p>
+                    <div class="icons-footer">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-dribbble"></i>
+                        <i class="fa-brands fa-behance"></i>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>

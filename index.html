@@ -211,6 +211,7 @@
         footer p {
             color: #777777;
             font-size: 14px;
+            font-weight:300;
         }
        footer .inputbox{
         display: flex;
@@ -229,7 +230,15 @@
        .about{
        width: 28rem;
        }
-       
+       .follow i{
+        font-size: .8rem;
+        color: #777777;
+        transition: .3s;
+       }
+       .follow i:hover{
+        cursor: pointer;
+        color: #FAB700;
+       }
         footer input{
                border:none;
                outline: none;
@@ -240,12 +249,13 @@
             background-color: #FAB700;
             width: 50px;
         }
+        
         footer .icons-footer{
             display: flex;
             flex-direction: row;
             
         }
-        footer span{
+        footer span, a{
             color: #FAB700;
         }
     </style>
@@ -330,7 +340,7 @@
                       <p class="heading" >About Us</p >
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                           dolore magna aliqua.</p>
-                      <p>Copyright ©2026 All rights reserved | This template is made with <span class="lnr lnr-heart"></span> by <span>Colorlib</span></p>
+                      <p>Copyright ©2026 All rights reserved | This template is made with <span class="lnr lnr-heart"></span> by <a href="">Colorlib</a></p>
                   </div>
                   <div class="news">
                       <p class="heading" >Newsletter</p >

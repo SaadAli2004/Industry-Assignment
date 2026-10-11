@@ -64,7 +64,9 @@
             align-items: center;
 
         }
-
+        .logo:hover{
+            cursor: pointer;
+        }
         .logo img {
             width: 125px;
         }
@@ -195,6 +197,8 @@
 
         .card h2 {
             padding-top: 2.2rem;
+            font-size: 1.2rem;
+            font-weight: 600;
         }
 
         /* Section 3 */
@@ -400,7 +404,7 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            gap:2rem;
+            gap: 2rem;
         }
 
         .gall-list {
@@ -430,15 +434,17 @@
             background-size: cover;
         }
 
-        
-        .overlay .heading{
-            h1{
+
+        .overlay .heading {
+            h1 {
                 font-size: 2.5rem;
                 font-weight: 500;
             }
-            p{
+
+            p {
                 font-size: .9rem;
             }
+
             text-align: center;
         }
 
@@ -456,7 +462,7 @@
             display: flex;
             justify-content: center;
         }
-         
+
         .video-bg {
             width: 550px;
             height: 300px;
@@ -467,16 +473,19 @@
         .vid-overlay {
             height: 100%;
             background-color: #fab70067;
-            display:flex;
+            display: flex;
             justify-content: center;
             align-items: center;
         }
-        .vid-overlay img:hover{
-            cursor:pointer;
+
+        .vid-overlay img:hover {
+            cursor: pointer;
         }
-        .name{
+
+        .name {
             font-size: 1.3rem;
         }
+
         .page {
             display: flex;
             gap: 2rem;
@@ -501,23 +510,29 @@
             justify-content: center;
             transform: scale(.88);
         }
-.user{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-.rating{
-    font-size: .9rem;
-}
-.page{
-    padding-top: 25px;
-}
-#highlight{
-    color: #FAB700;
-}
-#active{
-    background-color: #FAB700;
-}
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .rating {
+            font-size: .9rem;
+        }
+
+        .page {
+            padding-top: 25px;
+        }
+
+        #highlight {
+            color: #FAB700;
+        }
+
+        #active {
+            background-color: #FAB700;
+        }
+
         /* Blog */
         .section7 {
             height: 130vh;
@@ -633,7 +648,7 @@
             font-size: 4rem;
             color: #222222;
         }
-       
+
 
         .inner-circle {
             background-color: #FAB700;
@@ -732,6 +747,39 @@
         footer a {
             color: #FAB700;
         }
+
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 55%;
+        }
+
+       
+
+        .dropdown-content div {
+            width: 14rem;
+            padding: .73rem .5rem;
+
+        }
+
+        .dropdown-content div{
+            background-color: white;
+            height: 3rem;
+        }
+
+        .dropdown-content .shadow {
+            background: linear-gradient(180deg, transparent 50%, lightgray 500%);
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+            cursor: pointer;
+            
+        }
+        .dropdown-content div:nth-child(n+2):hover{
+            background-color: lightgray;
+        }
     </style>
 </head>
 
@@ -751,15 +799,30 @@
                 </div>
             </div>
             <div class="header">
-                <div class="logo">
+                <a class="logo" href="">
                     <img src="img/logo.png" alt="">
-                </div>
+                </a>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
                     <li><a href="">SERVICE</a></li>
                     <li><a href="">PROJECTS</a></li>
-                    <li><a href="">BLOG <i class="fa-solid fa-angle-down"></i></a></li>
+                    <li class="dropdown">
+                        <a href="" >BLOG <i class="fa-solid fa-angle-down"></i></a>
+                        <div class="dropdown-content">
+                            <div class="shadow"></div>
+                            <div>
+                                <a href="">
+                                    Blog Home
+                                </a>
+                            </div>
+                            <div>
+                                <a href="">
+                                    Blog Single
+                                </a>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="">CONTACT</a></li>
                     <li><a href="">ELEMENTS</a></li>
                 </ul>
@@ -784,24 +847,24 @@
                         <span class="lnr lnr-magic-wand"></span>
                     </div>
                     <h2>Maintenance</h2>
-                    <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
-                        standards especially in the workplace. That’s why.</p>
+                    <p>Planned and emergency maintenance for pumps, valves, conveyors and electrical systems, so your
+                        production lines keep running.</p>
                 </div>
                 <div class="card">
                     <div class="icon-bg">
                         <span class="lnr lnr-rocket"></span>
                     </div>
                     <h2>Residential Service</h2>
-                    <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
-                        standards especially in the workplace. That’s why.</p>
+                    <p>Heating, plumbing and electrical upgrades for apartment blocks and housing projects, carried out
+                        safely and to code.</p>
                 </div>
                 <div class="card">
                     <div class="icon-bg">
                         <span class="lnr lnr-bug"></span>
                     </div>
                     <h2>Commercial Service</h2>
-                    <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
-                        standards especially in the workplace. That’s why.</p>
+                    <p>Fit-outs, HVAC and power distribution for offices, retail units and warehouses, planned around
+                        your opening hours.</p>
                 </div>
             </div>
         </section>
@@ -871,137 +934,6 @@
                 </div>
             </div>
         </section>
-        <!-- Gallery -->
-        <section class="section5">
-            <div class="gall-container">
-                <div class="heading">
-                    <h1>Latest Finished Projects</h1>
-                    <p>Recent work for plants, warehouses and workshops.</p>
-                </div>
-                <div class="gall-list">
-                    <img src="img/grid/p1.avif" alt="">
-                    <img src="img/grid/p2.avif" alt="">
-                    <img src="img/grid/p3.avif" alt="">
-                    <img src="img/grid/p4.avif" alt="">
-
-                </div>
-            </div>
-        </section>
-        <!-- Feedback -->
-        <section class="section6">
-            <div class="overlay">
-                <div class="heading">
-                    <h1>Enjoy our Clients' Feedback</h1>
-                    <p>Plant managers and site owners on working with us.</p>
-                </div>
-                <div class="feedback-content">
-                    <div class="video-bg">
-                        <div class="vid-overlay">
-                         <img src="img/play-btn.avif" alt="">
-                        </div>
-
-                    </div>
-                    <div class="feedback">
-                        <div class="user">
-                            <h2 class="name">Fannie Rowe</h2>
-                            <div class="rating">
-                                <i class="fa-solid fa-star" id="highlight"></i>
-                                <i class="fa-solid fa-star" id="highlight"></i>
-                                <i class="fa-solid fa-star" id="highlight"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                            <p>They rebuilt our packaging line over a single weekend shutdown. The crew
-                                was on time, the site was clean and production restarted on Monday
-                                morning exactly as promised.
-                            </p>
-                            <div class="page">
-                                <div class="box" id="active"></div>
-                                <div class="box"></div>
-                                <div class="box"></div>
-
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Blog -->
-        <section class="section7">
-            <div class="blog-container">
-                <div class="heading">
-                    <h1>Latest posts from our Blog</h1>
-                    <p>News, guides and lessons learned from our engineers
-                        and site crews.</p>
-                </div>
-                <div class="blog-list">
-                    <div class="blog-card">
-                        <div class="blog">
-                            <div class="blog-img">
-                                <img src="img/s1.avif" alt="">
-                            </div>
-                            <div class="blog-detail">
-                                <div class="user" style="display: flex;">
-                                    <img class="user-img" src="img/user.avif" alt="">
-                                    <p>Adele Gonzalez</p>
-                                </div>
-                                <div class="blog-info">
-                                    <p>18th Sep</p>
-                                    <p><span class="lnr lnr-heart"></span>15</p>
-                                    <p><span class="lnr lnr-bubble"></span>05</p>
-                                </div>
-                            </div>
-                        </div>
-                        <h2 class="title"> Stainless Process Lines: Inspection Basics</h2>
-                        <p>What our engineers check on stainless tanks and pipework at every planned shutdown, and why
-                            the small welds matter most.</p>
-                    </div>
-                    <div class="blog-card">
-                        <div class="blog">
-                            <div class="blog-img">
-                                <img src="img/s1.avif" alt="">
-                            </div>
-                            <div class="blog-detail">
-                                <div class="user" style="display: flex;">
-                                    <img class="user-img" src="img/user.avif" alt="">
-                                    <p>Adele Gonzalez</p>
-                                </div>
-                                <div class="blog-info">
-                                    <p>18th Sep</p>
-                                    <p><span class="lnr lnr-heart"></span>15</p>
-                                    <p><span class="lnr lnr-bubble"></span>05</p>
-                                </div>
-                            </div>
-                        </div>
-                        <h2 class="title"> Stainless Process Lines: Inspection Basics</h2>
-                        <p>What our engineers check on stainless tanks and pipework at every planned shutdown, and why
-                            the small welds matter most.</p>
-                    </div>
-                    <div class="blog-card">
-                        <div class="blog">
-                            <div class="blog-img">
-                                <img src="img/s1.avif" alt="">
-                            </div>
-                            <div class="blog-detail">
-                                <div class="user" style="display: flex;">
-                                    <img class="user-img" src="img/user.avif" alt="">
-                                    <p>Adele Gonzalez</p>
-                                </div>
-                                <div class="blog-info">
-                                    <p>18th Sep</p>
-                                    <p><span class="lnr lnr-heart"></span>15</p>
-                                    <p><span class="lnr lnr-bubble"></span>05</p>
-                                </div>
-                            </div>
-                        </div>
-                        <h2 class="title"> Stainless Process Lines: Inspection Basics</h2>
-                        <p>What our engineers check on stainless tanks and pipework at every planned shutdown, and why
-                            the small welds matter most.</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
         <section class="data">
             <div class="overlay">
                 <div class="data-list">
@@ -1043,7 +975,137 @@
             </div>
 
         </section>
+        <!-- Gallery -->
+        <section class="section5">
+            <div class="gall-container">
+                <div class="heading">
+                    <h1>Latest Finished Projects</h1>
+                    <p>Recent work for plants, warehouses and workshops.</p>
+                </div>
+                <div class="gall-list">
+                    <img src="img/grid/p1.avif" alt="">
+                    <img src="img/grid/p2.avif" alt="">
+                    <img src="img/grid/p3.avif" alt="">
+                    <img src="img/grid/p4.avif" alt="">
 
+                </div>
+            </div>
+        </section>
+        <!-- Feedback -->
+        <section class="section6">
+            <div class="overlay">
+                <div class="heading">
+                    <h1>Enjoy our Clients' Feedback</h1>
+                    <p>Plant managers and site owners on working with us.</p>
+                </div>
+                <div class="feedback-content">
+                    <div class="video-bg">
+                        <div class="vid-overlay">
+                            <img src="img/play-btn.avif" alt="">
+                        </div>
+
+                    </div>
+                    <div class="feedback">
+                        <div class="user">
+                            <h2 class="name">Fannie Rowe</h2>
+                            <div class="rating">
+                                <i class="fa-solid fa-star" id="highlight"></i>
+                                <i class="fa-solid fa-star" id="highlight"></i>
+                                <i class="fa-solid fa-star" id="highlight"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>They rebuilt our packaging line over a single weekend shutdown. The crew
+                            was on time, the site was clean and production restarted on Monday
+                            morning exactly as promised.
+                        </p>
+                        <div class="page">
+                            <div class="box" id="active"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog -->
+        <section class="section7">
+            <div class="blog-container">
+                <div class="heading">
+                    <h1>Latest posts from our Blog</h1>
+                    <p>News, guides and lessons learned from our engineers
+                        and site crews.</p>
+                </div>
+                <div class="blog-list">
+                    <div class="blog-card">
+                        <div class="blog">
+                            <div class="blog-img">
+                                <img src="img/b1.avif" alt="">
+                            </div>
+                            <div class="blog-detail">
+                                <div class="user" style="display: flex;">
+                                    <img class="user-img" src="img/user.avif" alt="">
+                                    <p>Adele Gonzalez</p>
+                                </div>
+                                <div class="blog-info">
+                                    <p>18th Sep</p>
+                                    <p><span class="lnr lnr-heart"></span>15</p>
+                                    <p><span class="lnr lnr-bubble"></span>05</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="title"> Stainless Process Lines: Inspection Basics</h2>
+                        <p>What our engineers check on stainless tanks and pipework at every planned shutdown, and why
+                            the small welds matter most.</p>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog">
+                            <div class="blog-img">
+                                <img src="img/b2.avif" alt="">
+                            </div>
+                            <div class="blog-detail">
+                                <div class="user" style="display: flex;">
+                                    <img class="user-img" src="img/user.avif" alt="">
+                                    <p>Adele Gonzalez</p>
+                                </div>
+                                <div class="blog-info">
+                                    <p>2nd Sep</p>
+                                    <p><span class="lnr lnr-heart"></span>12</p>
+                                    <p><span class="lnr lnr-bubble"></span>03</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="title">Planning a Loading Bay That Works All Year</h2>
+                        <p>Doors, levellers, lighting and floor drainage: the details that decide whether a warehouse
+                            bay copes with winter.</p>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog">
+                            <div class="blog-img">
+                                <img src="img/b3.avif" alt="">
+                            </div>
+                            <div class="blog-detail">
+                                <div class="user" style="display: flex;">
+                                    <img class="user-img" src="img/user.avif" alt="">
+                                    <p>Adele Gonzalez</p>
+                                </div>
+                                <div class="blog-info">
+                                    <p>21st Aug</p>
+                                    <p><span class="lnr lnr-heart"></span>21</p>
+                                    <p><span class="lnr lnr-bubble"></span>04</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="title"> Night Shifts: Lighting a Plant for Safe Work</h2>
+                        <p>How we survey and relight process areas so night crews can see hazards clearly without glare.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
         <footer>
 
             <div class="footer-container">

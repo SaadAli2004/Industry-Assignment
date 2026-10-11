@@ -19,12 +19,18 @@
             padding: 0;
             box-sizing: border-box;
             font-family: "Poppins", sans-serif;
+
+            ::selection {
+                background-color: #FAB700;
+                color: white;
+            }
         }
 
         nav {
             position: sticky;
             top: 0;
             box-shadow: 0px 0px 50px lightgray;
+            z-index: 1;
         }
 
         .black-header {
@@ -115,7 +121,7 @@
             padding-bottom: 1rem;
         }
 
-        .banner button {
+        button {
             padding: .9rem 1.8rem;
             color: white;
             font-size: 1rem;
@@ -137,6 +143,8 @@
             width: 100%;
             height: 85vh;
         }
+
+
 
         .card-list {
             display: flex;
@@ -189,6 +197,392 @@
             padding-top: 2.2rem;
         }
 
+        /* Section 3 */
+        .section3 {
+            background-color: #f9f9ff;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .textwall {
+            width: 55%;
+        }
+
+        .section3 .container {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-bg {
+            width: 360px;
+            height: 400px;
+            background-image: url(img/form-bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .form-bg form input,
+        select,
+        textarea {
+            padding: 6px;
+            padding-left: .6rem;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+        }
+
+        .line1,
+        .line3,
+        .line4 {
+            font-weight: 300;
+            font-size: .9rem;
+        }
+
+        .line3 {
+            padding: .4rem 0px;
+        }
+
+
+        .line2 {
+            font-weight: 600;
+            font-size: 2.2rem;
+            width: 60%;
+            line-height: 2.5rem;
+            padding: 1rem 0px
+        }
+
+        .section3 button {
+            color: black
+        }
+
+        .section3 .textwall button {
+            margin: 1.5rem 0px;
+            padding: .6rem;
+            width: 14rem;
+        }
+
+        .textwall button:hover {
+            background-color: transparent;
+            color: #8a6400;
+            border: 1px solid #8a6400;
+        }
+
+        .textwall .line1 {
+            color: #8a6400;
+        }
+
+        .textwall .line4 {
+            color: #777777;
+        }
+
+        .form-bg form {
+            display: flex;
+            flex-direction: column;
+            gap: .3rem;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+
+        }
+
+        textarea {
+            height: 6rem;
+        }
+
+        .section3 input::placeholder,
+        .section3 h2,
+        .section3 textarea::placeholder {
+            color: white;
+        }
+
+        /* Section 4 */
+        .section4 {
+            background-color: white;
+            height: 100vh;
+        }
+
+        .sector-container,
+        .blog-container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .sector-list,
+        .blog-list {
+            display: flex;
+            padding-top: 2rem;
+            gap: 2rem;
+        }
+
+        .sector-container .heading,
+        .blog-container .heading,
+        .gall-container .heading {
+            h1 {
+                font-size: 2.3rem;
+                font-weight: 600;
+                padding: .2rem 0px;
+            }
+
+            p {
+                font-size: .9rem;
+                color: #777777;
+            }
+        }
+
+        .sector-card,
+        .blog-card {
+            text-align: left;
+            background-color: white;
+            width: 22.5rem;
+        }
+
+        .sector-card:hover {
+            cursor: pointer;
+
+            h2 {
+                color: #FAB700;
+            }
+
+            img {
+                transform: scale(1.12) rotate(-2deg);
+            }
+        }
+
+
+        .sector-card h2,
+        .blog-card h2 {
+            padding: 1rem 0px;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .sector-card p,
+        .blog-card p {
+            font-size: .9rem;
+            color: #777777;
+        }
+
+        .sector-card .img img {
+            width: 100%;
+
+        }
+
+        .sector-card h2,
+        .sector-card .img img,
+        .blog-card h2,
+        .blog-card .blog-img img {
+            transition: .2s;
+        }
+
+        .sector-card .img {
+            background-color: black;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        /* Gallery */
+        .section5 {
+            background-color: white;
+            height: 150vh;
+        }
+
+        .gall-container {
+            height: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap:2rem;
+        }
+
+        .gall-list {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            transform: scale(.95);
+        }
+
+        .gall-list img {
+            transition: .3s;
+        }
+
+        .gall-list img:hover {
+            cursor: pointer;
+            filter: brightness(120%) contrast(60%);
+
+        }
+
+        /* Feedback */
+        .section6 {
+            height: 120vh;
+            background-image: url(img/feedback-bg.avif);
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+        }
+
+        
+        .overlay .heading{
+            h1{
+                font-size: 2.5rem;
+                font-weight: 500;
+            }
+            p{
+                font-size: .9rem;
+            }
+            text-align: center;
+        }
+
+        .section6 .overlay {
+            background-color: rgba(0, 0, 0, 0.65);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .feedback-content {
+            display: flex;
+            justify-content: center;
+        }
+         
+        .video-bg {
+            width: 550px;
+            height: 300px;
+            background-image: url(img/video-bg.avif);
+            background-repeat: no-repeat;
+        }
+
+        .vid-overlay {
+            height: 100%;
+            background-color: #fab70067;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .vid-overlay img:hover{
+            cursor:pointer;
+        }
+        .name{
+            font-size: 1.3rem;
+        }
+        .page {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .box {
+            width: 10px;
+            height: 10px;
+            background-color: #777777;
+        }
+
+        .section6 i {
+            color: #777777;
+
+        }
+
+        .feedback {
+            width: 40%;
+            display: flex;
+            gap: 1.5rem;
+            flex-direction: column;
+            justify-content: center;
+            transform: scale(.88);
+        }
+.user{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.rating{
+    font-size: .9rem;
+}
+.page{
+    padding-top: 25px;
+}
+#highlight{
+    color: #FAB700;
+}
+#active{
+    background-color: #FAB700;
+}
+        /* Blog */
+        .section7 {
+            height: 130vh;
+            background-color: white;
+        }
+
+        .blog-container .heading h1 {
+            padding: 1.5rem 0px;
+        }
+
+        .blog-container .heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .blog-container .heading p {
+            width: 90%;
+        }
+
+        .blog-img {
+            height: 200px;
+            background-color: black;
+            overflow: hidden
+        }
+
+        .blog-card:hover {
+            cursor: pointer;
+
+            .blog-img img {
+                transform: scale(1.1);
+            }
+
+            h2 {
+                color: #FAB700;
+            }
+        }
+
+        .blog-detail {
+            display: flex;
+            justify-content: space-between;
+            padding: .6rem 0px;
+        }
+
+        .blog-card .blog-info {
+            align-items: center;
+            display: flex;
+            gap: .4rem;
+        }
+
+        .blog-card .title {
+            text-transform: uppercase;
+        }
+
+        .blog-card .user {
+            display: flex;
+            gap: .4rem;
+            align-items: center;
+        }
+
+        .user-img {
+            width: 35px;
+            height: 35px;
+        }
+
         /* Data */
 
         .data {
@@ -198,44 +592,61 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-        .overlay{
+
+        .overlay {
             background-color: rgba(0, 0, 0, 0.6);
             height: 100%;
             color: white;
         }
-        .circle, .inner-circle{
-            border-radius: 100%;
-        }
-        .circle{
-            border: 1px solid #FAB700;
-            width: 150px;
-            
-        }
-        .inner-circle h2{
-            background-color: #FAB700;
-            border-radius: 100%;
-            text-align: center;
-            padding: 25px;
-            margin: 25px;
-            
-        }
-        .data-list div{
+
+        .data-list {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            
-        }
-        .data-list div p{
-            font-size: 1.2rem;
-        }
-        .data-list{
-            display: flex;
-            height: 100%;
             justify-content: center;
             align-items: center;
-            gap: 6.5rem;
+            height: 100%;
+            gap: 6rem;
         }
+
+        .data-list div {
+            width: 14rem;
+        }
+
+        .circle {
+            border: 1px solid #FAB700;
+            width: 14rem;
+            height: 14rem;
+            border-radius: 50%;
+            transform: scale(.7);
+        }
+
+        .data-list div {
+            text-align: center;
+        }
+
+        .data-list div p {
+            font-weight: 300;
+            position: relative;
+            font-size: 1.2rem;
+        }
+
+        .inner-circle h1 {
+            font-size: 4rem;
+            color: #222222;
+        }
+       
+
+        .inner-circle {
+            background-color: #FAB700;
+            height: 100%;
+            border-radius: 50%;
+            transform: scale(.65);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
         /* Footer */
         footer {
             height: 60vh;
@@ -270,7 +681,7 @@
             gap: 0;
         }
 
-        .heading {
+        footer .heading {
             font-size: 20px;
             color: white;
             font-weight: 600;
@@ -300,12 +711,15 @@
             border: none;
             outline: none;
             width: 22rem;
-
         }
 
         footer .inputbox i {
             background-color: #FAB700;
             width: 50px;
+        }
+
+        footer .inputbox i:hover {
+            cursor: pointer;
         }
 
         footer .icons-footer {
@@ -315,7 +729,7 @@
         }
 
         footer span,
-        a {
+        footer a {
             color: #FAB700;
         }
     </style>
@@ -391,47 +805,245 @@
                 </div>
             </div>
         </section>
+        <section class="section3">
+            <div class="container">
+
+                <div class="textwall">
+                    <p class="line1">Engineering partners since 1998</p>
+                    <h1 class="line2">
+                        We build what keeps
+                        industry moving
+                    </h1>
+                    <p class="line3">We are here to listen to you and deliver excellence
+
+                    </p>
+                    <p class="line4">For more than twenty years we have designed, built and maintained the places where
+                        things are made: factories, warehouses, workshops and utility plants. Our engineers, site
+                        managers and technicians work as one team from the first survey to the final handover, so you
+                        deal with one contractor, one schedule and one point of contact. Every project is planned around
+                        safety, quality and the hours your business needs to keep running.</p>
+                    <button>Get Started Now</button>
+                </div>
+                <div class="form-bg">
+                    <form>
+                        <h2>Request a Quote</h2>
+                        <select>
+                            <option>Select Service</option>
+                        </select>
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Phone Number">
+                        <input type="text" placeholder="Email Address">
+                        <textarea placeholder="Message"></textarea>
+                        <button>Request Free Quote</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="sector-container">
+                <div class="heading">
+                    <h1>Our Core Market Sectors</h1>
+                    <p>The industries we have served for more than twenty years</p>
+                </div>
+                <div class="sector-list">
+                    <div class="sector-card">
+                        <div class="img">
+                            <img src="img/s1.avif" alt="">
+                        </div>
+                        <h2>Automotive Engineering</h2>
+                        <p>Assembly lines, paint shops and test cells for vehicle and parts makers, from layout to
+                            commissioning.</p>
+                    </div>
+                    <div class="sector-card">
+                        <div class="img">
+                            <img src="img/s2.avif" alt="">
+                        </div>
+                        <h2>Construction & Engineering</h2>
+                        <p>Steel structures, foundations and site services for plants, depots and logistics centres.</p>
+                    </div>
+                    <div class="sector-card">
+                        <div class="img">
+                            <img src="img/s3.avif" alt="">
+                        </div>
+                        <h2>Industrial Engineering</h2>
+                        <p>Process piping, tanks and utilities for food, chemical and pharmaceutical production.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery -->
+        <section class="section5">
+            <div class="gall-container">
+                <div class="heading">
+                    <h1>Latest Finished Projects</h1>
+                    <p>Recent work for plants, warehouses and workshops.</p>
+                </div>
+                <div class="gall-list">
+                    <img src="img/grid/p1.avif" alt="">
+                    <img src="img/grid/p2.avif" alt="">
+                    <img src="img/grid/p3.avif" alt="">
+                    <img src="img/grid/p4.avif" alt="">
+
+                </div>
+            </div>
+        </section>
+        <!-- Feedback -->
+        <section class="section6">
+            <div class="overlay">
+                <div class="heading">
+                    <h1>Enjoy our Clients' Feedback</h1>
+                    <p>Plant managers and site owners on working with us.</p>
+                </div>
+                <div class="feedback-content">
+                    <div class="video-bg">
+                        <div class="vid-overlay">
+                         <img src="img/play-btn.avif" alt="">
+                        </div>
+
+                    </div>
+                    <div class="feedback">
+                        <div class="user">
+                            <h2 class="name">Fannie Rowe</h2>
+                            <div class="rating">
+                                <i class="fa-solid fa-star" id="highlight"></i>
+                                <i class="fa-solid fa-star" id="highlight"></i>
+                                <i class="fa-solid fa-star" id="highlight"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                            <p>They rebuilt our packaging line over a single weekend shutdown. The crew
+                                was on time, the site was clean and production restarted on Monday
+                                morning exactly as promised.
+                            </p>
+                            <div class="page">
+                                <div class="box" id="active"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog -->
+        <section class="section7">
+            <div class="blog-container">
+                <div class="heading">
+                    <h1>Latest posts from our Blog</h1>
+                    <p>News, guides and lessons learned from our engineers
+                        and site crews.</p>
+                </div>
+                <div class="blog-list">
+                    <div class="blog-card">
+                        <div class="blog">
+                            <div class="blog-img">
+                                <img src="img/s1.avif" alt="">
+                            </div>
+                            <div class="blog-detail">
+                                <div class="user" style="display: flex;">
+                                    <img class="user-img" src="img/user.avif" alt="">
+                                    <p>Adele Gonzalez</p>
+                                </div>
+                                <div class="blog-info">
+                                    <p>18th Sep</p>
+                                    <p><span class="lnr lnr-heart"></span>15</p>
+                                    <p><span class="lnr lnr-bubble"></span>05</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="title"> Stainless Process Lines: Inspection Basics</h2>
+                        <p>What our engineers check on stainless tanks and pipework at every planned shutdown, and why
+                            the small welds matter most.</p>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog">
+                            <div class="blog-img">
+                                <img src="img/s1.avif" alt="">
+                            </div>
+                            <div class="blog-detail">
+                                <div class="user" style="display: flex;">
+                                    <img class="user-img" src="img/user.avif" alt="">
+                                    <p>Adele Gonzalez</p>
+                                </div>
+                                <div class="blog-info">
+                                    <p>18th Sep</p>
+                                    <p><span class="lnr lnr-heart"></span>15</p>
+                                    <p><span class="lnr lnr-bubble"></span>05</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="title"> Stainless Process Lines: Inspection Basics</h2>
+                        <p>What our engineers check on stainless tanks and pipework at every planned shutdown, and why
+                            the small welds matter most.</p>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog">
+                            <div class="blog-img">
+                                <img src="img/s1.avif" alt="">
+                            </div>
+                            <div class="blog-detail">
+                                <div class="user" style="display: flex;">
+                                    <img class="user-img" src="img/user.avif" alt="">
+                                    <p>Adele Gonzalez</p>
+                                </div>
+                                <div class="blog-info">
+                                    <p>18th Sep</p>
+                                    <p><span class="lnr lnr-heart"></span>15</p>
+                                    <p><span class="lnr lnr-bubble"></span>05</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="title"> Stainless Process Lines: Inspection Basics</h2>
+                        <p>What our engineers check on stainless tanks and pipework at every planned shutdown, and why
+                            the small welds matter most.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
         <section class="data">
             <div class="overlay">
                 <div class="data-list">
 
-                   <div>
-                       <div class="circle">
-                           <div class="inner-circle">
-                               <h2>2K+</h2>
-                           </div>
-                       </div>
-                       <p>Projects Completed</p>
-                   </div>
-                   <div>
-                       <div class="circle">
-                           <div class="inner-circle">
-                               <h2>5.5K</h2>
-                           </div>
-                       </div>
-                       <p>Total Employees</p>
-                   </div>
-                   <div>
-                       <div class="circle">
-                           <div class="inner-circle">
-                               <h2>959</h2>
-                           </div>
-                       </div>
-                       <p>Happy Clients</p>
-                   </div>
-                   <div>
-                       <div class="circle">
-                           <div class="inner-circle">
-                               <h2>367</h2>
-                           </div>
-                       </div>
-                       <p>Tickets Submitted</p>
-                   </div>
+                    <div>
+                        <div class="circle">
+                            <div class="inner-circle">
+                                <h1>2K+</h1>
+                            </div>
+                        </div>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div>
+                        <div class="circle">
+                            <div class="inner-circle">
+                                <h1>5.5K</h1>
+                            </div>
+                        </div>
+                        <p>Total Employees</p>
+                    </div>
+                    <div>
+                        <div class="circle">
+                            <div class="inner-circle">
+                                <h1>959</h1>
+                            </div>
+                        </div>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div>
+                        <div class="circle">
+                            <div class="inner-circle">
+                                <h1>367</h1>
+                            </div>
+                        </div>
+                        <p>Service Calls Answered</p>
+                    </div>
 
                 </div>
             </div>
 
         </section>
+
         <footer>
 
             <div class="footer-container">
